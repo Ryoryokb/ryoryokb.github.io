@@ -129,22 +129,42 @@ header {
 .heading h2 {
   font-weight: normal;
 }
-
+/*
 .lesson {
   float: left;
   width: 25%;
+}*/
+.lessons{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
 }
-
+.lesson{
+  flex-basis:25%;
+}
 .lesson-icon {
   position: relative;
+
 }
 
-.lesson-icon p {
+.lesson-icon a{
+  position: absolute;
+  top: 45%;
+  width:100%;
+  color:white;
+  display: block;
+}
+
+.seni:hover{
+  color:teal;
+}
+
+/*.lesson-icon p {
   position: absolute;
   top: 37%;
   width: 100%;
   color: white;
-}
+}*/
 
 .text-contents {
   width: 80%;
