@@ -111,14 +111,14 @@
   }
   
   .lesson-wrapper {
-    height: 1400px;
+    height: 1500px;
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f7f7f7;
     text-align: center;
   }
-  
+
   .heading {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -131,34 +131,42 @@
   .heading h2 {
     font-weight: normal;
   }
-  
+  /*
   .lesson {
     float: left;
     width: 25%;
-
-  }
+  }*/
   
+  .lessons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  .lesson{
+    flex-basis:33%;
+  }
   .lesson-icon {
     position: relative;
   }
   
-  .seni{
+  .lesson-icon a{
     position: absolute;
     top: 45%;
-    left:85px;
+    width: 100%;
     color:white;
+    display: block;
   }
   
   .seni:hover{
     color:teal;
   }
-  
+  /*
   .lesson-icon p {
     position: absolute;
     top: 37%;
     width: 100%;
     color: white;
-  }
+  }*/
   
   .text-contents {
     width: 80%;
@@ -168,6 +176,22 @@
     color: #b3aeb5;
   }
   
+  .back{
+    padding: 8px 24px;
+    margin-top: 30px;
+    color: white;
+    display: inline-block;
+    opacity: 0.7;
+    border-radius: 4px;
+    text-align: center;
+    background-color: wheat;
+  }
+  
+  .back:hover{
+    opacity:1;
+    color:teal;
+  }
+
   .heading h3 {
     font-weight: normal;
   }
